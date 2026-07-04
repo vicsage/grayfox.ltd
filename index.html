@@ -44,14 +44,23 @@
     "addressCountry": "IL"
   },
   "areaServed": "Worldwide",
+  "founder": {
+    "@type": "Person",
+    "name": "Isaac Ganor",
+    "jobTitle": "Founder",
+    "worksFor": { "@type": "Organization", "name": "GrayFox Ltd" }
+  },
   "knowsAbout": [
     "Corporate intelligence",
     "Background checks",
     "Due diligence",
     "Open-source intelligence (OSINT)",
     "Identity resolution",
+    "De-anonymization",
+    "Disinformation analysis",
     "Adverse media screening",
-    "Sanctions and watchlist screening"
+    "Sanctions and watchlist screening",
+    "OSINT training and mentorship"
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -59,7 +68,8 @@
     "itemListElement": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Background Checks & Due Diligence" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate Intelligence" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "OSINT Research & Digital Footprint Analysis" } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "OSINT Research & Digital Footprint Analysis" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "OSINT Training & Team Mentorship" } }
     ]
   }
 }
@@ -145,7 +155,7 @@
   h2 { color: var(--white); font-size: 1.65rem; margin: 10px 0 18px; font-weight: 600; }
   .lead { color: var(--muted); max-width: 700px; }
 
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 44px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; margin-top: 44px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 30px 28px; }
   .card h3 { color: var(--white); font-size: 1.06rem; font-weight: 600; margin-bottom: 12px; letter-spacing: 0.02em; }
   .card p { font-size: 0.93rem; color: var(--muted); }
@@ -186,6 +196,7 @@
     <nav class="nav-links">
       <a href="#services">Services</a>
       <a href="#approach">Approach</a>
+      <a href="#leadership">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -195,9 +206,9 @@
   <div class="hero">
     <div class="wrap">
       <img class="logo" src="assets/logo-silver.png" alt="GrayFox Ltd - Digital Intelligence Solutions logo">
-      <span class="kicker" style="display:block; margin-bottom:18px;">Corporate Intelligence &middot; Background Checks &middot; OSINT Research</span>
-      <h1>Know exactly who you are dealing with, before it matters.</h1>
-      <p>GrayFox Ltd is an Israeli intelligence firm specializing in <strong>background checks</strong>, <strong>due diligence</strong>, and <strong>open-source intelligence (OSINT) research</strong> on individuals and entities worldwide. Verified findings, clearly sourced, delivered discreetly.</p>
+      <span class="kicker" style="display:block; margin-bottom:18px;">Corporate Intelligence &middot; Background Checks &middot; OSINT Research &middot; Training</span>
+      <h1>We turn digital noise into actionable intelligence.</h1>
+      <p>Know exactly who you are dealing with, before it matters. GrayFox Ltd is an Israeli intelligence firm specializing in <strong>background checks</strong>, <strong>due diligence</strong>, and <strong>open-source intelligence (OSINT) research</strong> on individuals and entities worldwide. Verified findings, clearly sourced, delivered discreetly.</p>
       <a class="cta" href="#contact">Request a consultation</a>
     </div>
   </div>
@@ -221,7 +232,12 @@
         <div class="card">
           <div class="rule"></div>
           <h3>OSINT Research &amp; Digital Footprint</h3>
-          <p>Real-time <strong>identity resolution</strong> connecting emails, phone numbers, usernames, and accounts to a single verified profile, including <strong>exposure in leaked and breached data</strong> and analysis of a subject's wider network.</p>
+          <p>Real-time <strong>identity resolution</strong> connecting emails, phone numbers, usernames, and accounts to a single verified profile, including <strong>de-anonymization</strong> of hostile or fake accounts, <strong>disinformation analysis</strong>, and exposure in <strong>leaked and breached data</strong>.</p>
+        </div>
+        <div class="card">
+          <div class="rule"></div>
+          <h3>Training &amp; Team Mentorship</h3>
+          <p>Operational <strong>OSINT and WEBINT training</strong> and hands-on <strong>mentorship for investigation teams</strong>: tradecraft, source methodology, and workflow design, delivered as workshops, webinars, or ongoing programs.</p>
         </div>
       </div>
     </div>
@@ -256,7 +272,16 @@
     </div>
   </section>
 
-  <section id="contact" class="contact">
+  <section id="leadership">
+    <div class="wrap">
+      <span class="kicker">Who we are</span>
+      <h2>Leadership</h2>
+      <p class="lead">GrayFox was founded in 2020 by <strong>Isaac Ganor</strong>, an intelligence professional with <strong>more than 20 years in the field</strong>: a veteran of the <strong>IDF Intelligence Corps (Unit 8200)</strong> and Arabic linguist, he led threat-intelligence teams whose reporting supported <strong>US and British security services</strong>, served as a senior analyst for government clients across four continents, and lectures at the <strong>Hebrew University of Jerusalem</strong>.</p>
+      <p class="lead" style="margin-top:16px;">For cases that need both angles, GrayFox partners with a trusted network of <strong>cyber and digital-forensics experts</strong>. Our founder also builds investigative tooling at <a href="https://www.profileintel.com" style="color: var(--silver);">Profile Intel</a>.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" style="border-top: 1px solid var(--line);">
     <div class="wrap">
       <span class="kicker">Contact</span>
       <h2>Start a conversation</h2>
